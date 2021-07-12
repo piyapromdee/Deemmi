@@ -69,6 +69,12 @@
     }
 
     function getContext() {
+      document.getElementById("type").append(life.getContext().type)
+      document.getElementById("viewType").append(life.getContext().viewType)
+      document.getElementById("utouId").append(life.getContext().utouId)
+      document.getElementById("roomId").append(life.getContext().roomId)
+      document.getElementById("groupId").append(life.getContext().groupId)
+
     }
 
     async function getUserProfile() {
@@ -92,7 +98,7 @@
       await liff.init({ liffId: "1656194313-zmDq1aQn" })
       getEnvironment()
       getUserProfile()
-      // getContext()
+      getContext()
       // getFriendship()
       // createUniversalLink()
     }
