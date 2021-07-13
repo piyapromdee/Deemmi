@@ -48,6 +48,15 @@
     }
 
     async function shareMsg() {
+      await liff.shareTargetPicker([
+        {
+          "type": "text",
+          "text" : "Deemmi ที่ปรึกษาออนไลน์เพื่อคนเลี้ยงสัตว์ (Televetmed) \
+          ให้คำแนะนำโดยคุณหมอจากโรงพยาบาลสัตว์ทั่วประเทศ พบกับเราเร็ว ๆ นี้ผ่านช่องทาง \
+          Website: www.deemmi.com (เร็ว ๆนี้) \
+          Line: @deemmi FB: Deemmi"
+        }
+      ])
     }
 
     function logOut() {
